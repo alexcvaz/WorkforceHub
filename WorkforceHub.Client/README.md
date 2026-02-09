@@ -1,65 +1,71 @@
 # WorkforceHub Client
 
-Frontend da aplicação WorkforceHub - Sistema de registro de ponto (punch clock).
+Frontend da aplicação WorkforceHub - Sistema de registro de ponto.
 
 **Stack**: Vue 3 + TypeScript + Vite
 
-## Configuração Rápida
+## Setup Rápido
 
-### Dependências
-```sh
+```bash
+# Instalar dependências
 npm install
-```
 
-### Desenvolvimento
-```sh
+# Desenvolvimento (hot-reload)
 npm run dev
-```
 
-### Produção
-```sh
+# Build para produção
 npm run build
-```
 
-### Lint
-```sh
+# Lint
 npm run lint
 ```
 
-## IDE Recomendada
+**Frontend**: `http://localhost:5173`
 
-- **VS Code** + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
-- Desabilitar Vetur se instalado
-
-## Extensões Navegador
-
-- **Chrome/Edge**: [Vue.js DevTools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-- **Firefox**: [Vue.js DevTools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-
-## Estrutura do Projeto
+## Estrutura
 
 ```
 src/
-??? components/    Componentes reutilizáveis
-??? composables/   Vue Composables (lógica)
-??? views/         Páginas/Rotas
-??? services/      API calls
+??? components/    Componentes reutilizáveis (PunchButton, DateTimeClock, etc)
+??? composables/   Lógica reativa (usePunch, useAuth, usePunchMonth)
+??? views/         Páginas (TimeTap, Login)
+??? services/      API Client
 ??? types/         TypeScript types
 ??? router/        Configuração de rotas
 ??? assets/        CSS e imagens
 ```
 
-## Funcionalidades Principais
+## Funcionalidades
 
 - ?? Autenticação JWT
 - ?? Registro de ponto (entrada/saída/intervalo)
-- ?? Visualização mensal de registros
+- ?? Visualização mensal com tabela interativa
 - ?? Relógio em tempo real
 - ?? Responsivo (desktop/tablet/mobile)
-- ?? Interface limpa e intuitiva
+- ?? Sincronização de estado com Provide/Inject
 
-## Links Úteis
+## Componentes Principais
 
-- [Vite Config](https://vite.dev/config/)
-- [Vue 3 Docs](https://vuejs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
+- **TimeTap.vue** - Página principal de registro
+- **Login.vue** - Tela de autenticação
+- **PunchMonthTable.vue** - Tabela de histórico mensal
+- **DateTimeClock.vue** - Relógio com data/hora
+- **PunchButton.vue** - Botão de registro
+
+## IDE Setup
+
+- VS Code + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- [Vue.js DevTools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+
+## Variáveis de Ambiente
+
+Crie `.env.local`:
+
+```env
+VITE_API_URL=http://localhost:5000/api
+```
+
+## Para Mais Informações
+
+Veja o [README principal](../README.md) na raiz do projeto.
+
