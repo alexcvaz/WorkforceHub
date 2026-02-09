@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="workforcehub.client/WorkforceHub.Client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="WorkforceHub.Server/WorkforceHub.Api.csproj" />
+</Solution>
