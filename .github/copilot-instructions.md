@@ -71,6 +71,30 @@ Antes de qualquer mudança, verificar:
 - ? Tratamento de erros apropriado
 - ? Sem console.log/Debug.WriteLine em produção
 - ? TypeScript/C# sem erros de tipo
+- ? Sem emojis em arquivos Markdown (causam problemas de encoding no GitHub)
+
+### 4a. Markdown e Documentação
+
+**Encoding e Compatibilidade:**
+- ? NÃO usar emojis em arquivos `.md` (causam ? no GitHub)
+- ? Usar apenas caracteres ASCII e texto simples
+- ? Listas com `-` ou números
+- ? Usar `inline code` com backticks
+- ? Usar code blocks com ` ``` `
+- ? Usar **bold** e *italic* padrão Markdown
+
+**Exemplo Correto:**
+```markdown
+## Funcionalidades
+
+- Autenticação JWT
+- Registro de ponto
+- Visualização mensal
+
+### Seções
+
+Use heading levels corretamente (##, ###, etc)
+```
 
 ### 5. Commits
 

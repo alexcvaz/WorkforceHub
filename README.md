@@ -7,22 +7,22 @@ Sistema completo de registro de ponto (punch clock) com interface moderna e resp
 ![Vue](https://img.shields.io/badge/Vue-3-green)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
-## ?? Sobre o Projeto
+## Sobre o Projeto
 
 WorkforceHub é uma aplicação full-stack para controle de ponto de entrada e saída de funcionários. Oferece uma interface limpa e intuitiva para registrar pontos, visualizar histórico mensal e gerenciar registros de forma eficiente.
 
 ### Características Principais
 
-- ?? **Autenticação JWT** - Segurança com tokens JWT
-- ?? **Registro de Ponto** - Entrada, saída e intervalo
-- ?? **Visualização Mensal** - Tabela com histórico de registros
-- ?? **Relógio em Tempo Real** - Data e hora sincronizadas
-- ?? **Responsivo** - Desktop, tablet e mobile
-- ?? **Interface Moderna** - Design clean e profissional
-- ?? **Persistência** - Banco de dados SQLite/SQL Server
-- ?? **Histórico Completo** - Rastreamento de IP e User-Agent
+- **Autenticação JWT** - Segurança com tokens JWT
+- **Registro de Ponto** - Entrada, saída e intervalo
+- **Visualização Mensal** - Tabela com histórico de registros
+- **Relógio em Tempo Real** - Data e hora sincronizadas
+- **Responsivo** - Desktop, tablet e mobile
+- **Interface Moderna** - Design clean e profissional
+- **Persistência** - Banco de dados SQLite/SQL Server
+- **Histórico Completo** - Rastreamento de IP e User-Agent
 
-## ??? Arquitetura
+## Arquitetura
 
 ### Stack Tecnológico
 
@@ -141,28 +141,28 @@ VITE_APP_NAME=WorkforceHub
 }
 ```
 
-## ?? Funcionalidades
+## Funcionalidades
 
 ### Para o Usuário
 
-- ? Login/Logout com JWT
-- ? Registrar novo ponto
-- ? Ver histórico de pontos do dia
-- ? Visualizar registros em formato tabular (mensal)
-- ? Navegar entre meses
-- ? Relógio em tempo real
-- ? Notificações de sucesso/erro
+- Login/Logout com JWT
+- Registrar novo ponto
+- Ver histórico de pontos do dia
+- Visualizar registros em formato tabular (mensal)
+- Navegar entre meses
+- Relógio em tempo real
+- Notificações de sucesso/erro
 
 ### Para o Sistema
 
-- ? Armazenamento seguro de registros
-- ? Rastreamento de IP e User-Agent
-- ? Validação de dados
-- ? Tratamento de erros
-- ? Logging estruturado
-- ? Sincronização de estado com Provide/Inject
+- Armazenamento seguro de registros
+- Rastreamento de IP e User-Agent
+- Validação de dados
+- Tratamento de erros
+- Logging estruturado
+- Sincronização de estado com Provide/Inject
 
-## ?? Segurança
+## Segurança
 
 - JWT com expiração configurável
 - Validação de entrada no servidor
@@ -171,7 +171,7 @@ VITE_APP_NAME=WorkforceHub
 - Hash de senhas (quando aplicável)
 - Endpoints protegidos com `[Authorize]`
 
-## ?? Banco de Dados
+## Banco de Dados
 
 ### Tabelas Principais
 
@@ -194,7 +194,7 @@ CREATE TABLE Punches (
 );
 ```
 
-## ?? Testes
+## Testes
 
 ### Frontend
 
@@ -209,7 +209,7 @@ npm run type-check        # TypeScript check
 dotnet test              # Executar testes
 ```
 
-## ?? Padrões de Código
+## Padrões de Código
 
 ### Frontend (Vue 3 + TypeScript)
 
@@ -241,7 +241,7 @@ public MyController(IService service)
 }
 ```
 
-## ?? Como Contribuir
+## Como Contribuir
 
 1. **Criar uma branch** para sua feature
    ```bash
@@ -278,7 +278,7 @@ public MyController(IService service)
 Tipos: feat, fix, refactor, style, chore, docs
 ```
 
-## ?? Convenções
+## Convenções
 
 ### Nomenclatura
 
@@ -295,14 +295,14 @@ Tipos: feat, fix, refactor, style, chore, docs
 - Services para lógica de negócio
 - Types centralizados
 
-## ?? Problemas Conhecidos
+## Problemas Conhecidos
 
 - SQLite é apenas para desenvolvimento (usar SQL Server em produção)
 - Sem autenticação de 2FA
 - Sem refresh automático de dados (requer F5)
 - Sem backup automático
 
-## ??? Roadmap
+## Roadmap
 
 - [ ] Autenticação com 2FA
 - [ ] Relatórios de ponto
@@ -312,14 +312,14 @@ Tipos: feat, fix, refactor, style, chore, docs
 - [ ] App mobile (Flutter/React Native)
 - [ ] Sincronização offline
 
-## ?? Documentação Adicional
+## Documentação Adicional
 
 - [Setup Inicial](./docs/SETUP.md)
 - [Guia de Arquitetura](./docs/ARCHITECTURE.md)
 - [API Reference](./docs/API.md)
 - [Instruções para IA](./.github/copilot-instructions.md)
 
-## ?? IDE Setup Recomendado
+## IDE Setup Recomendado
 
 ### Frontend
 
@@ -339,18 +339,18 @@ Tipos: feat, fix, refactor, style, chore, docs
 - **Chrome/Edge**: [Vue.js DevTools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
 - **Firefox**: [Vue.js DevTools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
 
-## ?? Suporte
+## Suporte
 
 Para dúvidas ou problemas:
 - Abrir uma **Issue** no GitHub
 - Verificar discussões existentes
 - Consultar a documentação
 
-## ?? License
+## License
 
 Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
-## ????? Autor
+## Autor
 
 Desenvolvido como aplicação de registro de ponto.
 

@@ -37,12 +37,12 @@ src/
 
 ## Funcionalidades
 
-- ?? Autenticação JWT
-- ?? Registro de ponto (entrada/saída/intervalo)
-- ?? Visualização mensal com tabela interativa
-- ?? Relógio em tempo real
-- ?? Responsivo (desktop/tablet/mobile)
-- ?? Sincronização de estado com Provide/Inject
+- Autenticação JWT
+- Registro de ponto (entrada/saída/intervalo)
+- Visualização mensal com tabela interativa
+- Relógio em tempo real
+- Responsivo (desktop/tablet/mobile)
+- Sincronização de estado com Provide/Inject
 
 ## Componentes Principais
 
